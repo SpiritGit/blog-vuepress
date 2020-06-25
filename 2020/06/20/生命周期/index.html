@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue生命周期 | 王鑫之个人主页</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue生命周期">
+    <meta name="keywords" content="Vue生命周期">
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.654cfb47.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/8.d47956ad.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/3.2b79a1c5.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/22.6b8a6de1.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.8aefdd46.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.56bc5b0b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.72e732fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.0aeb1cf8.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.43091766.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.a0b17260.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.28ad2420.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.c5fde455.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.8adff865.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.bb4af459.js"><link rel="prefetch" href="/blog-vuepress/assets/js/20.94e6e4b9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/21.cdd255b3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.322781e9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/24.35dcbda6.js"><link rel="prefetch" href="/blog-vuepress/assets/js/25.6e78f2f4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/26.9944a971.js"><link rel="prefetch" href="/blog-vuepress/assets/js/27.da97f9e0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.3e15cab3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.9b93add7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.035a866e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.08b0f9f2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.d09c27f0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.5775b741.js"><link rel="prefetch" href="/blog-vuepress/assets/js/vuejs-paginate.b188c949.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog-vuepress/" class="nav-link home-link">王鑫之个人主页 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog-vuepress/" class="nav-link mobile-home-link">王鑫之个人主页 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        Vue生命周期
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">王鑫之</span> <span itemprop="address">   in 南京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-06-20T00:00:00.000Z">
+      2020-06-20
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog-vuepress/tag/Vue" data-v-d832e844> Vue </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><blockquote><p>个人对Vue生命周期的学习记录与理解，可能不全的地方后续补</p></blockquote> <h2 id="一、生命周期图"><a href="#一、生命周期图" class="header-anchor">#</a> 一、生命周期图</h2> <p><img src="https://m.qpic.cn/psc?/V1284ode1oZ5gY/es2MkY2PTea.oVL6KUJJIFWqTsqy2BwhCwrGVtuLCar.mn6iU8RLuyUALPt1DGQ.43uvfENQKICDDV3*G1Gt9g!!/b&amp;bo=OASvCgAAAAADB7s!&amp;rf=viewer_4" alt="img"></p> <p>测试代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Vue实例的生命周期&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+  &lt;h1&gt;测试生命周期&lt;/h1&gt;
+  &lt;div&gt;{{msg}}&lt;/div&gt;
+  &lt;hr&gt;
+  &lt;h3&gt;测试beforeUpdate和update两个钩子函数&lt;/h3&gt;
+  &lt;button @click=&quot;handlerUpdate&quot;&gt;更新数据&lt;/button&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  const app = new Vue({
+    el: '#app',
+    data: {
+      msg: &quot;12345&quot;
+    },
+    methods: {
+      handlerUpdate() {
+        this.msg=this.msg.split(&quot;&quot;).reverse().join(&quot;&quot;)
+      }
+    },
+    //按照示意图依次调用
+    beforeCreate(){
+      console.log(&quot;调用了beforeCreate钩子函数&quot;);
+    },
+    created(){
+      console.log(&quot;调用了created钩子函数&quot;);
+    },
+    beforeMount(){
+      console.log('调用了beforeMount钩子函数');
+    },
+    mounted(){
+      console.log('调用了mounted钩子函数');
+    },
+    beforeUpdate(){
+      console.log(&quot;调用了beforeUpdate钩子函数&quot;)
+    },
+    updated(){
+      console.log(&quot;调用了updated钩子函数&quot;);
+    },
+    beforeDestroy(){
+      console.log(&quot;调用了beforeDestroy钩子函数&quot;);
+    },
+    destroyed(){
+      console.log(&quot;调用了destroyed钩子函数&quot;);
+    }
+  })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><p>结果如图所示</p> <p><img src="https://m.qpic.cn/psc?/V1284ode1oZ5gY/es2MkY2PTea.oVL6KUJJIPx1YDdQRXW*tSDsHNn480lmHq9ieTBcQ8015xee2h2SrijipnsWVg6eUlKZ1qOmzw!!/b&amp;bo=Ygc7AgAAAAADB34!&amp;rf=viewer_4" alt="img"></p> <p>初始化页面依次调用了：</p> <blockquote><p>1.调用了beforeCreate钩子函数
+2.调用了created钩子函数
+3.调用了beforeMount钩子函数
+4.调用了mounted钩子函数</p></blockquote> <p>点击更新数据后：
+12345变成了54321，此时调用了：</p> <blockquote><p>1.调用了beforeUpdate钩子函数
+2.调用了updated钩子函数</p></blockquote> <p>打开F12控制台 直接输入app.$destroy()主动销毁Vue实例调用：</p> <blockquote><p>1.调用了beforeDestroy钩子函数
+2.调用了destroyed钩子函数</p></blockquote></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#一、生命周期图" title="一、生命周期图">一、生命周期图</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>项目详情</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/blog-vuepress/assets/js/app.654cfb47.js" defer></script><script src="/blog-vuepress/assets/js/8.d47956ad.js" defer></script><script src="/blog-vuepress/assets/js/3.2b79a1c5.js" defer></script><script src="/blog-vuepress/assets/js/22.6b8a6de1.js" defer></script>
+  </body>
+</html>

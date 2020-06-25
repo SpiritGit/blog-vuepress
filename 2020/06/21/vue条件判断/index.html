@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue条件判断 | 王鑫之个人主页</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue条件判断">
+    <meta name="keywords" content="v-if、v-else、v-elseif">
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.654cfb47.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/8.d47956ad.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/3.2b79a1c5.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/24.35dcbda6.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.8aefdd46.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.56bc5b0b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.72e732fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.0aeb1cf8.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.43091766.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.a0b17260.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.28ad2420.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.c5fde455.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.8adff865.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.bb4af459.js"><link rel="prefetch" href="/blog-vuepress/assets/js/20.94e6e4b9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/21.cdd255b3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/22.6b8a6de1.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.322781e9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/25.6e78f2f4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/26.9944a971.js"><link rel="prefetch" href="/blog-vuepress/assets/js/27.da97f9e0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.3e15cab3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.9b93add7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.035a866e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.08b0f9f2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.d09c27f0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.5775b741.js"><link rel="prefetch" href="/blog-vuepress/assets/js/vuejs-paginate.b188c949.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog-vuepress/" class="nav-link home-link">王鑫之个人主页 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog-vuepress/" class="nav-link mobile-home-link">王鑫之个人主页 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        Vue条件判断
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">王鑫之</span> <span itemprop="address">   in 南京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-06-21T00:00:00.000Z">
+      2020-06-21
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog-vuepress/tag/Vue" data-v-d832e844> Vue </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="一、v-if、v-else、v-elseif"><a href="#一、v-if、v-else、v-elseif" class="header-anchor">#</a> 一、v-if、v-else、v-elseif</h2> <p>v-if用于条件判断，判断Dom元素是否显示。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;h2 v-if=&quot;isFlag&quot;&gt;isFlag为true显示这个&lt;/h2&gt;
+    &lt;h2 v-show=&quot;isShow&quot;&gt;isShow为true是显示这个&lt;/h2&gt;
+    &lt;div v-if=&quot;age&lt;18&quot;&gt;小于18岁未成年&lt;/div&gt;
+    &lt;div v-else-if=&quot;age&lt;60&quot;&gt;大于18岁小于60岁正值壮年&lt;/div&gt;
+    &lt;div v-else=&quot;&quot;&gt;大于60岁,暮年&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        isFlag:true,
+        isShow:false,
+        age:66
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>单独使用v-if，变量为布尔值，为true才渲染Dom。</p> <p>v-show的变量也是布尔值，为true才显示内容，类似css的display。</p> <p>v-if、v-else、v-else-if联合使用相当于if、elseif、else，但是在条件比较多的时候建议使用计算属性。</p> <h2 id="二、v-if的demo"><a href="#二、v-if的demo" class="header-anchor">#</a> 二、v-if的demo</h2> <p>在登录网站是经常可以选择使用账户名或者邮箱登录的切换按钮。要求点击按钮切换登录方式。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;span v-if=&quot;isUser&quot;&gt;
+      &lt;label for=&quot;username&quot;&gt;用户账号&lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;请输入用户名&quot; &gt;
+    &lt;/span&gt;
+    &lt;span v-else=&quot;isUser&quot;&gt;
+        &lt;label for=&quot;email&quot;&gt;用户邮箱&lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;email&quot; placeholder=&quot;请输入用户邮箱&quot; &gt;
+    &lt;/span&gt;
+    &lt;button @click=&quot;isUser=!isUser&quot;&gt;切换类型&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        isUser:true
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p>使用v-if和v-else选择渲染指定的Dom，点击按钮对isUser变量取反。
+这里有个小问题，如果已经输入了账号了，此时想切换到邮箱输入，输入框未自己清空。</p> <p>这里需要了解一下vue底层操作，此时input输入框值被复用了。
+vue在进行DOM渲染是，处于性能考虑，会复用已经存在的元素，而不是每次都创建新的DOM元素。
+在上面demo中，Vue内部发现原来的input元素不再使用，所以直接将其映射对应虚拟DOM，用来复用。
+如果不希望出现类似复用问题，可以给对应的dom元素加上key值，并保证key不同。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;请输入用户名&quot; key=&quot;username&quot;&gt;
+&lt;input type=&quot;text&quot; id=&quot;email&quot; placeholder=&quot;请输入用户邮箱&quot; key=&quot;email&quot;&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="三、v-show"><a href="#三、v-show" class="header-anchor">#</a> 三、v-show</h2> <p>v-if 在首次渲染的时候，如果条件为假，什么也不操作，页面当作没有这些元素。当条件为真的时候，开始局部编译，动态的向DOM元素里面添加元素。当条件从真变为假的时候，开始局部编译，卸载这些元素，也就是删除。</p> <p>​ v-show 不管条件是真还是假，第一次渲染的时候都会编译出来，也就是标签都会添加到DOM中。之后切换的时候，通过display: none;样式来显示隐藏元素。可以说只是改变css的样式，几乎不会影响什么性能。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;h2 v-show=&quot;isFlag&quot;&gt;v-show只是操作元素的style属性display&lt;/h2&gt;
+    &lt;h2 v-if=&quot;isFlag&quot;&gt;v-if是新增和删除dom元素&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        isFlag:true
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#一、v-if、v-else、v-elseif" title="一、v-if、v-else、v-elseif">一、v-if、v-else、v-elseif</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#二、v-if的demo" title="二、v-if的demo">二、v-if的demo</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#三、v-show" title="三、v-show">三、v-show</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>项目详情</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/blog-vuepress/assets/js/app.654cfb47.js" defer></script><script src="/blog-vuepress/assets/js/8.d47956ad.js" defer></script><script src="/blog-vuepress/assets/js/3.2b79a1c5.js" defer></script><script src="/blog-vuepress/assets/js/24.35dcbda6.js" defer></script>
+  </body>
+</html>

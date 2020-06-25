@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue动态绑定属性 | 王鑫之个人主页</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue动态绑定属性">
+    <meta name="keywords" content="v-bind">
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.654cfb47.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/8.d47956ad.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/3.2b79a1c5.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/21.cdd255b3.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.8aefdd46.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.56bc5b0b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.72e732fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.0aeb1cf8.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.43091766.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.a0b17260.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.28ad2420.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.c5fde455.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.8adff865.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.bb4af459.js"><link rel="prefetch" href="/blog-vuepress/assets/js/20.94e6e4b9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/22.6b8a6de1.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.322781e9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/24.35dcbda6.js"><link rel="prefetch" href="/blog-vuepress/assets/js/25.6e78f2f4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/26.9944a971.js"><link rel="prefetch" href="/blog-vuepress/assets/js/27.da97f9e0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.3e15cab3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.9b93add7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.035a866e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.08b0f9f2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.d09c27f0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.5775b741.js"><link rel="prefetch" href="/blog-vuepress/assets/js/vuejs-paginate.b188c949.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog-vuepress/" class="nav-link home-link">王鑫之个人主页 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog-vuepress/" class="nav-link mobile-home-link">王鑫之个人主页 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        Vue动态绑定属性
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">王鑫之</span> <span itemprop="address">   in 南京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-06-20T00:00:00.000Z">
+      2020-06-20
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog-vuepress/tag/Vue" data-v-d832e844> Vue </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="一、v-bind的基本使用"><a href="#一、v-bind的基本使用" class="header-anchor">#</a> 一、v-bind的基本使用</h2> <p>某些时候我们并不想将变量放在标签内容中，像这样<code>&lt;h2&gt;&lt;/h2&gt;</code>是将变量h2标签括起来，类似js的innerHTML。但是我们期望将变量imgURL写在如下位置，想这样<code>&lt;img src=&quot;imgURL&quot; alt=&quot;&quot;&gt;</code>导入图片是希望动态获取图片的链接，此时的imgURL并非变量而是字符串imgURL，如果要将其生效为变量，需要使用到一个标签v-bind:，像这样<code>&lt;img v-bind:src=&quot;imgURL&quot; alt=&quot;&quot;&gt;</code>，而且这里也不能使用Mustache语法，类似<code>&lt;img v-bind:src=&quot;&quot; alt=&quot;&quot;&gt;</code>，这也是错误的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;v-bind的基本使用&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;!-- 错误的做法这里不能使用Mustache语法 --&gt;
+    &lt;!-- &lt;img v-bind:src=&quot;{{imgURL}}&quot; alt=&quot;&quot;&gt; --&gt;
+    &lt;!-- 正确的做法使用v-bind指令 --&gt;
+    &lt;img v-bind:src=&quot;imgURL&quot; alt=&quot;&quot;&gt;
+    &lt;a v-bind:href=&quot;aHerf&quot;&gt;&lt;/a&gt;
+    &lt;!-- 语法糖写法 --&gt;
+    &lt;img :src=&quot;imgURL&quot; alt=&quot;&quot;&gt;
+    &lt;a :href=&quot;aHerf&quot;&gt;&lt;/a&gt;
+
+  &lt;/div&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        message:&quot;你好啊&quot;,
+        imgURL:&quot;https://cn.bing.com/th?id=OIP.NaSKiHPRcquisK2EehUI3gHaE8&amp;pid=Api&amp;rs=1&quot;,
+        aHerf:&quot;http://www.baidu.com&quot;
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><p>此时vue对象中定义的imgURL变量和aHerf变量可以动态的绑定到img标签的src属性和a标签的href属性。v-bind:由于用的很多，vue对他有一个语法糖的优化写法也就是:，此时修改imgURL变量图片会重新加载。</p> <h2 id="二、v-bind动态绑定class"><a href="#二、v-bind动态绑定class" class="header-anchor">#</a> 二、v-bind动态绑定class</h2> <h3 id="_2-1-v-bind动态绑定class-对象语法"><a href="#_2-1-v-bind动态绑定class-对象语法" class="header-anchor">#</a> 2.1  v-bind动态绑定class(对象语法)</h3> <p>有时候我们期望对Dom元素的节点的class进行动态绑定，选择此Dom是否有指定class属性。例如，给h2标签加上class=&quot;active&quot;，当Dom元素有此class时候，变红<code>&lt;style&gt;.active{color:red;}&lt;/style&gt;</code>，在写一个按钮绑定事件，点击变黑色，再次点击变红色。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;v-bind动态绑定class(对象语法)&lt;/title&gt;
+  &lt;style&gt;
+    .active{
+      color:red;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;!-- &lt;h2 class=&quot;active&quot;&gt;{{message}}&lt;/h2&gt;
+    &lt;h2 :class=&quot;active&quot;&gt;{{message}}&lt;/h2&gt; --&gt;
+
+    &lt;!-- 动态绑定class对象用法  --&gt;
+    &lt;!-- &lt;h2 :class=&quot;{key1:value1,key2:value2}&quot;&gt;{{message}}&lt;/h2&gt;
+    &lt;h2 :class=&quot;{类名1:true,类名2:boolean}&quot;&gt;{{message}}&lt;/h2&gt; --&gt;
+    &lt;h2 class=&quot;title&quot; :class=&quot;{active:isActive}&quot;&gt;{{message}}&lt;/h2&gt;
+    &lt;h2 class=&quot;title&quot; :class=&quot;getClasses()&quot;&gt;{{message}}&lt;/h2&gt;
+    &lt;button @click=&quot;change&quot;&gt;点击变色&lt;/button&gt;
+
+  &lt;/div&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        message:&quot;你好啊&quot;,
+        active:&quot;active&quot;,
+        isActive:true
+      },
+      methods: {
+        change(){
+          this.isActive = !this.isActive
+        },
+        getClasses(){
+          return {active:this.isActive}
+        }
+      },
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><p>定义两个变量active和isActive，在Dom元素中使用:class={active:isActive}，此时绑定的class='active'，isActive为true，active显示，定义方法change()绑定在按钮上，点击按钮this.isActive = !this.isActive，控制Dom元素是否有class='active'的属性。</p> <h3 id="_2-2-v-bind动态绑定class-数组用法"><a href="#_2-2-v-bind动态绑定class-数组用法" class="header-anchor">#</a> 2.2 v-bind动态绑定class(数组用法)</h3> <p>class属性中可以放数组，会依次解析成对应的class。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;v-bind动态绑定class(数组用法)&lt;/title&gt;
+  &lt;style&gt;
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;!-- 加上单引号当成字符串 --&gt;
+    &lt;h2 class=&quot;title&quot; :class=&quot;['active','line']&quot;&gt;{{message}}&lt;/h2&gt;
+    &lt;!-- 不加会被当成变量 --&gt;
+    &lt;h2 class=&quot;title&quot; :class=&quot;[active,line]&quot;&gt;{{message}}&lt;/h2&gt;
+    &lt;h2 class=&quot;title&quot; :class=&quot;getClasses()&quot;&gt;{{message}}&lt;/h2&gt;
+
+  &lt;/div&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        message:&quot;你好啊&quot;,
+        active:&quot;aaaa&quot;,
+        line:'bbbb'
+      },
+      methods: {
+
+        getClasses(){
+          return [this.active,this.line]
+        }
+      },
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><p>加上单引号的表示字符串,不加的会当成变量,可以直接使用方法返回数组对象。</p> <h2 id="三、v-bind动态绑定style"><a href="#三、v-bind动态绑定style" class="header-anchor">#</a> 三、v-bind动态绑定style</h2> <h3 id="_4-1-v-bind动态绑定style-对象语法"><a href="#_4-1-v-bind动态绑定style-对象语法" class="header-anchor">#</a> 4.1 v-bind动态绑定style(对象语法)</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- &lt;h2 :style=&quot;{key(属性名):value(属性值)}&quot;&gt;{{message}}&lt;/h2&gt; --&gt;
+&lt;!-- 加单引号，当成字符串解析 --&gt;
+&lt;h2 :style=&quot;{fontSize:'50px'}&quot;&gt;{{message}}&lt;/h2&gt;
+&lt;!-- 不加单引号，变量解析 --&gt;
+&lt;h2 :style=&quot;{fontSize:fontSize}&quot;&gt;{{message}}&lt;/h2&gt;
+&lt;h2 :style=&quot;getStyle()&quot;&gt;{{message}}&lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_4-1-v-bind动态绑定style-数组语法"><a href="#_4-1-v-bind动态绑定style-数组语法" class="header-anchor">#</a> 4.1 v-bind动态绑定style(数组语法)</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>  &lt;div id=&quot;app&quot;&gt;
+    &lt;h2 :style=&quot;[baseStyle]&quot;&gt;{{message}}&lt;/h2&gt;
+    &lt;h2 :style=&quot;getStyle()&quot;&gt;{{message}}&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        message:&quot;你好啊&quot;,
+        baseStyle:{backgroundColor:'red'}
+      },
+      methods: {
+        getStyle(){
+          return [this.baseStyle]
+        }
+      },
+    })
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>类似绑定class，绑定style也是一样的。</p></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#一、v-bind的基本使用" title="一、v-bind的基本使用">一、v-bind的基本使用</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#二、v-bind动态绑定class" title="二、v-bind动态绑定class">二、v-bind动态绑定class</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_2-1-v-bind动态绑定class-对象语法" title="2.1  v-bind动态绑定class(对象语法)">2.1  v-bind动态绑定class(对象语法)</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_2-2-v-bind动态绑定class-数组用法" title="2.2 v-bind动态绑定class(数组用法)">2.2 v-bind动态绑定class(数组用法)</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#三、v-bind动态绑定style" title="三、v-bind动态绑定style">三、v-bind动态绑定style</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-1-v-bind动态绑定style-对象语法" title="4.1 v-bind动态绑定style(对象语法)">4.1 v-bind动态绑定style(对象语法)</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-1-v-bind动态绑定style-数组语法" title="4.1 v-bind动态绑定style(数组语法)">4.1 v-bind动态绑定style(数组语法)</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>项目详情</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/blog-vuepress/assets/js/app.654cfb47.js" defer></script><script src="/blog-vuepress/assets/js/8.d47956ad.js" defer></script><script src="/blog-vuepress/assets/js/3.2b79a1c5.js" defer></script><script src="/blog-vuepress/assets/js/21.cdd255b3.js" defer></script>
+  </body>
+</html>

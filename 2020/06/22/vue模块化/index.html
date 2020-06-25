@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue模块化 | 王鑫之个人主页</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue模块化">
+    <meta name="keywords" content="Vue模块化">
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.654cfb47.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/8.d47956ad.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/3.2b79a1c5.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/26.9944a971.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.8aefdd46.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.56bc5b0b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.72e732fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.0aeb1cf8.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.43091766.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.a0b17260.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.28ad2420.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.c5fde455.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.8adff865.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.bb4af459.js"><link rel="prefetch" href="/blog-vuepress/assets/js/20.94e6e4b9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/21.cdd255b3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/22.6b8a6de1.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.322781e9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/24.35dcbda6.js"><link rel="prefetch" href="/blog-vuepress/assets/js/25.6e78f2f4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/27.da97f9e0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.3e15cab3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.9b93add7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.035a866e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.08b0f9f2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.d09c27f0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.5775b741.js"><link rel="prefetch" href="/blog-vuepress/assets/js/vuejs-paginate.b188c949.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog-vuepress/" class="nav-link home-link">王鑫之个人主页 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog-vuepress/" class="nav-link mobile-home-link">王鑫之个人主页 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        Vue模块化
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">王鑫之</span> <span itemprop="address">   in 南京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-06-22T00:00:00.000Z">
+      2020-06-22
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog-vuepress/tag/Vue" data-v-d832e844> Vue </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="一、为什么要模块化"><a href="#一、为什么要模块化" class="header-anchor">#</a> 一、为什么要模块化</h2> <p>随着前端项目越来越大，团队人数越来越多，多人协调开发一个项目成为常态。例如现在小明和小张共同开发一个项目，小明定义一个aaa.js，小张定义了一个bbb.js。</p> <blockquote><p>aaa.js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//小明开发
+var name = '小明'
+var age = 22
+
+function sum(num1, num2) {
+  return num1 + num2
+}
+var flag = true
+if (flag) {
+  console.log(sum(10, 20));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>此时小明的sum是没有问题的。</p> <blockquote><p>bbb.js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//小红
+var name = &quot;小红&quot;
+var flag = false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此时小明和小红各自用各自的flag你变量没问题。</p> <blockquote><p>但是此时小明又创建了一个mmm.js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//小明
+if(flag){
+  console.log(&quot;flag是true&quot;)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>在index.html页面导入这些js文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> &lt;script src=&quot;aaa.js&quot; &gt;&lt;/script&gt;
+  &lt;script src=&quot;bbb.js&quot; &gt;&lt;/script&gt;
+  &lt;script src=&quot;ccc.js&quot; &gt;&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此时小明知道自己在aaa.js中定义的flag是true，认为打印没有问题，但是不知道小红的bbb.js中也定义了flag为true，所以mmm.js文件并没有打印出“flag是true”。</p> <p>这就是全局变量同名问题。</p> <h2 id="二、使用导出全局变量模块解决全局变量同名问题"><a href="#二、使用导出全局变量模块解决全局变量同名问题" class="header-anchor">#</a> 二、使用导出全局变量模块解决全局变量同名问题</h2> <blockquote><p>aaa.js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//模块对象
+var moduleA = (function (param) {
+  //导出对象
+  var obj = {}
+  var name = '小明'
+  var age = 22
+
+  function sum(num1, num2) {
+    return num1 + num2
+  }
+  var flag = true
+  if (flag) {
+    console.log(sum(10, 20))
+  }
+  obj.flag=false
+  return obj
+})()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><blockquote><p>mmm.js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//小明
+//使用全局变量moduleA
+if(moduleA.flag){
+  console.log(&quot;flag是true&quot;)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>直接使用aaa.js导出的moduleA变量获取小明自己定义的flag。</p> <h2 id="三、commonjs的模块化实现"><a href="#三、commonjs的模块化实现" class="header-anchor">#</a> 三、CommonJS的模块化实现</h2> <p>CommonJS需要nodeJS的依支持。</p> <blockquote><p>aaa.js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>var name = '小明'
+var age = 22
+
+function sum(num1, num2) {
+  return num1 + num2
+}
+var flag = true
+if (flag) {
+  console.log(sum(10, 20))
+}
+
+// module.exports = {
+//   flag : flag,
+//   sum : sum
+// }
+//导出对象
+module.exports = {
+  flag,
+  sum
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p>使用<code>module.exports = {}</code>导出需要的对象。</p> <blockquote><p>mmm.js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//导入对象,nodejs语法,需要node支持,从aaa.js取出对象
+var {flag,sum} = require(&quot;./aaa&quot;)
+
+console.log(sum(10,20));
+
+if(flag){
+  console.log(&quot;flag is true&quot;);
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="es6的模块化实现"><a href="#es6的模块化实现" class="header-anchor">#</a> ES6的模块化实现</h2> <p>如何实现模块化，在html中需要使用<code>type='module'</code>属性。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script src=&quot;aaa.js&quot; type=&quot;module&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bbb.js&quot; type=&quot;module&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;mmm.js&quot; type=&quot;module&quot;&gt;&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此时表示aaa.js是一个单独的模块，此模块是有作用域的。如果要使用aaa.js内的变量，需要在aaa.js中先导出变量，再在需要使用的地方导出变量。</p> <h3 id="_4-1-直接导出"><a href="#_4-1-直接导出" class="header-anchor">#</a> 4.1 直接导出</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>export let name = '小明'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>使用</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>import {name} from './aaa.js'
+console.log(name)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_4-2-统一导出"><a href="#_4-2-统一导出" class="header-anchor">#</a> 4.2 统一导出</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>var age = 22
+function sum(num1, num2) {
+  return num1 + num2
+}
+var flag = true
+if (flag) {
+  console.log(sum(10, 20))
+}
+//2.最后统一导出
+export {
+  flag,sum,age
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><blockquote><p>使用<code>import {name,flag,sum} from './aaa.js'</code>导入多个变量</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>import {name,flag,sum} from './aaa.js'
+
+console.log(name)
+
+if(flag){
+  console.log(&quot;小明是天才&quot;);
+}
+
+console.log(sum(20,30));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>使用{}将需要的变量放置进去</p> <h3 id="_4-3-导出函数-类"><a href="#_4-3-导出函数-类" class="header-anchor">#</a> 4.3 导出函数/类</h3> <blockquote><p>在aaa.js中添加</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//3.导出函数/类
+export function say(value) {
+  console.log(value);
+}
+export class Person{
+  run(){
+    console.log(&quot;奔跑&quot;);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><blockquote><p>在mmm.js中添加</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>import {name,flag,sum,say,Person} from './aaa.js'
+
+console.log(name)
+
+if(flag){
+  console.log(&quot;小明是天才&quot;);
+}
+
+console.log(sum(20,30));
+
+say('hello')
+const p = new Person();
+p.run();
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="_4-4-默认导入-export-default"><a href="#_4-4-默认导入-export-default" class="header-anchor">#</a> 4.4 默认导入 export default</h3> <blockquote><p>导出</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>export default {
+  flag,sum,age
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><p>导入</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>//4.默认导入 export default
+import aaa from './aaa.js'
+console.log(aaa.sum(10,110));
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_4-5-统一全部导入"><a href="#_4-5-统一全部导入" class="header-anchor">#</a> 4.5 统一全部导入</h3> <blockquote><p>使用import * as aaa from './aaa.js'统一全部导入</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 5.统一全部导入
+import * as aaa from './aaa.js'
+console.log(aaa.flag);
+console.log(aaa.name);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#一、为什么要模块化" title="一、为什么要模块化">一、为什么要模块化</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#二、使用导出全局变量模块解决全局变量同名问题" title="二、使用导出全局变量模块解决全局变量同名问题">二、使用导出全局变量模块解决全局变量同名问题</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#三、commonjs的模块化实现" title="三、CommonJS的模块化实现">三、CommonJS的模块化实现</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#es6的模块化实现" title="ES6的模块化实现">ES6的模块化实现</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-1-直接导出" title="4.1 直接导出">4.1 直接导出</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-2-统一导出" title="4.2 统一导出">4.2 统一导出</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-3-导出函数-类" title="4.3 导出函数/类">4.3 导出函数/类</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-4-默认导入-export-default" title="4.4 默认导入 export default">4.4 默认导入 export default</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-5-统一全部导入" title="4.5 统一全部导入">4.5 统一全部导入</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>项目详情</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/blog-vuepress/assets/js/app.654cfb47.js" defer></script><script src="/blog-vuepress/assets/js/8.d47956ad.js" defer></script><script src="/blog-vuepress/assets/js/3.2b79a1c5.js" defer></script><script src="/blog-vuepress/assets/js/26.9944a971.js" defer></script>
+  </body>
+</html>

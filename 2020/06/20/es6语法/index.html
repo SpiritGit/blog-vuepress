@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ES6新增语法 | 王鑫之个人主页</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="ES6新增语法">
+    <meta name="keywords" content="ES6新增语法">
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.654cfb47.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/8.d47956ad.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/3.2b79a1c5.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/20.94e6e4b9.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.8aefdd46.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.56bc5b0b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.72e732fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.0aeb1cf8.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.43091766.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.a0b17260.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.28ad2420.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.c5fde455.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.8adff865.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.bb4af459.js"><link rel="prefetch" href="/blog-vuepress/assets/js/21.cdd255b3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/22.6b8a6de1.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.322781e9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/24.35dcbda6.js"><link rel="prefetch" href="/blog-vuepress/assets/js/25.6e78f2f4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/26.9944a971.js"><link rel="prefetch" href="/blog-vuepress/assets/js/27.da97f9e0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.3e15cab3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.9b93add7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.035a866e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.08b0f9f2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.d09c27f0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.5775b741.js"><link rel="prefetch" href="/blog-vuepress/assets/js/vuejs-paginate.b188c949.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog-vuepress/" class="nav-link home-link">王鑫之个人主页 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog-vuepress/" class="nav-link mobile-home-link">王鑫之个人主页 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        ES6新增语法
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">王鑫之</span> <span itemprop="address">   in 南京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-06-20T00:00:00.000Z">
+      2020-06-20
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog-vuepress/tag/Vue" data-v-d832e844> Vue </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><blockquote><p>个人对ES6语法的学习记录与理解，可能不全的地方后续补充</p></blockquote> <h2 id="一、块级作用域"><a href="#一、块级作用域" class="header-anchor">#</a> 一、块级作用域</h2> <p>ES6之前没有块级作用域，ES5的var没有块级作用域的概念，只有function有作用域的概念，ES6的let、const引入了块级作用域。</p> <p>ES5之前if和for都没有作用域，所以很多时候需要使用function的作用域，比如闭包。</p> <h3 id="_1-1-什么是变量作用域"><a href="#_1-1-什么是变量作用域" class="header-anchor">#</a> 1.1. 什么是变量作用域</h3> <p>变量在什么范围内可用，类似Java的全局变量和局部变量的概念，全局变量，全局都可用，局部变量只在范围内可用。ES5之前的var是没有块级作用域的概念，使用var声明的变量就是全局的。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token punctuation">{</span>
+	var name <span class="token operator">=</span> <span class="token string">'zzz'</span><span class="token punctuation">;</span>
+	console.log<span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+console.log<span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_1-2-没有块级作用域造成的问题"><a href="#_1-2-没有块级作用域造成的问题" class="header-anchor">#</a> 1.2. 没有块级作用域造成的问题</h3> <h4 id="if块级"><a href="#if块级" class="header-anchor">#</a> if块级</h4> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>var <span class="token function-name function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    if<span class="token punctuation">(</span>true<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	var name <span class="token operator">=</span> <span class="token string">'zzz'</span><span class="token punctuation">;</span>
+	func <span class="token operator">=</span> <span class="token function-name function">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		console.log<span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	func<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+name <span class="token operator">=</span> <span class="token string">'ttt'</span><span class="token punctuation">;</span>
+func<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console.log<span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>代码输出结果为'zzz','ttt','ttt'，第一次调用func()，此时name=‘zzz’，在if块外将name置成‘ttt’，此时生效了，if没有块级作用域。</p> <h3 id="for块级"><a href="#for块级" class="header-anchor">#</a> for块级</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token operator">&lt;</span><span class="token operator">!</span>DOCTYPE html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html <span class="token assign-left variable">lang</span><span class="token operator">=</span><span class="token string">&quot;en&quot;</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta <span class="token assign-left variable">charset</span><span class="token operator">=</span><span class="token string">&quot;UTF-8&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;viewport&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>meta http-equiv<span class="token operator">=</span><span class="token string">&quot;X-UA-Compatible&quot;</span> <span class="token assign-left variable">content</span><span class="token operator">=</span><span class="token string">&quot;ie=edge&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>块级作用域<span class="token operator">&lt;</span>/title<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/head<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>按钮<span class="token operator"><span class="token file-descriptor important">1</span>&lt;</span>/button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>按钮<span class="token operator"><span class="token file-descriptor important">2</span>&lt;</span>/button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>按钮<span class="token operator"><span class="token file-descriptor important">3</span>&lt;</span>/button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>按钮<span class="token operator"><span class="token file-descriptor important">4</span>&lt;</span>/button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>按钮<span class="token operator"><span class="token file-descriptor important">5</span>&lt;</span>/button<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>script <span class="token assign-left variable">src</span><span class="token operator">=</span><span class="token string">&quot;https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js&quot;</span><span class="token operator">&gt;</span>    <span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+      // <span class="token number">3</span>.没有块级作用域引起的问题:for块级
+      var btns <span class="token operator">=</span> document.getElementsByTagName<span class="token punctuation">(</span><span class="token string">&quot;button&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span>var i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> btns.length<span class="token punctuation">;</span> i++<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        btns<span class="token punctuation">[</span>i<span class="token punctuation">]</span>.addEventListener<span class="token punctuation">(</span><span class="token string">'click'</span>,function <span class="token punctuation">(</span>param<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console.log<span class="token punctuation">(</span><span class="token string">&quot;第&quot;</span>+i+<span class="token string">&quot;个按钮被点击了&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/html<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>for块级中使用var声明变量i时，是全局变量，点击任意按钮结果都是“第五个按钮被点击了”。说明在执行<code>btns[i].addEventListener('click',function())</code>时，for块级循环已经走完，此时i=5，所有添加的事件的i都是5。</p> <p>​ 改造上述代码，将for循环改造，由于函数有作用域，使用闭包能解决上述问题。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 使用闭包,函数有作用域
+      for (var i = 0; i &lt; btns.length; i++) {
+        (function (i) {
+          btns[i].addEventListener('click',function (param) {
+            console.log(&quot;第&quot;+i+&quot;个按钮被点击了&quot;);
+          })
+        })(i);
+      }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>在ES6中使用let/const解决块级作用域问题，let和const有块级作用域，const定义常量，在for块级中使用let解决块级作用域问题。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> // ES6使用let/const
+     const btns = document.getElementsByTagName(&quot;button&quot;);
+     for (let i = 0; i &lt; btns.length; i++) {
+       btns[i].addEventListener('click',function (param) {
+         console.log(&quot;第&quot;+i+&quot;个按钮被点击了&quot;);
+       })
+     }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="二、const的使用"><a href="#二、const的使用" class="header-anchor">#</a> 二、const的使用</h2> <h3 id="_1-const用来定义常量，赋值之后不能再赋值，再次赋值会报错。"><a href="#_1-const用来定义常量，赋值之后不能再赋值，再次赋值会报错。" class="header-anchor">#</a> 1.const用来定义常量，赋值之后不能再赋值，再次赋值会报错。</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+        //1.定义常量，赋值后不能再赋值，在赋值报错
+        const count = 1
+        // count = 2
+    &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="_2-const不能只声明不赋值，会报错。"><a href="#_2-const不能只声明不赋值，会报错。" class="header-anchor">#</a> 2.const不能只声明不赋值，会报错。</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+        //2.只声明不赋值，必须赋值
+        // const count;
+    &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_3-const常量含义是你不能改变其指向的对象，例如user，都是你可以改变user属性。"><a href="#_3-const常量含义是你不能改变其指向的对象，例如user，都是你可以改变user属性。" class="header-anchor">#</a> 3.const常量含义是你不能改变其指向的对象，例如user，都是你可以改变user属性。</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code> &lt;script&gt;
+        //3.常量的含义是你不能改变其指向的对象user，但是你可以改变user属性
+        const user = {
+            name:&quot;zzz&quot;,
+            age:24,
+            height:175
+        }
+        console.log(user)
+        user.name = &quot;ttt&quot;
+        user.age = 22
+        user.height = 188
+        console.log(user)
+    &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="三、es6的增强写法"><a href="#三、es6的增强写法" class="header-anchor">#</a> 三、ES6的增强写法</h2> <h3 id="_3-1-es6的对象属性增强型写法"><a href="#_3-1-es6的对象属性增强型写法" class="header-anchor">#</a> 3.1. ES6的对象属性增强型写法</h3> <p>ES6以前定义一个对象</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = &quot;zzz&quot;;
+const age = 18;
+const user = {
+  name:name,
+  age:age
+}
+console.log(user);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>​ ES6写法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const name = &quot;zzz&quot;;
+const age = 18;
+const user = {
+	name,age
+}
+console.log(user);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_3-2-es6对象的函数增强型写法"><a href="#_3-2-es6对象的函数增强型写法" class="header-anchor">#</a> 3.2 ES6对象的函数增强型写法</h3> <p>ES6之前对象内定义函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = {
+  run:function(){
+     console.log(&quot;奔跑&quot;);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>ES6写法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const obj = {
+  run(){
+     console.log(&quot;奔跑&quot;);
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="四、箭头函数"><a href="#四、箭头函数" class="header-anchor">#</a> 四、箭头函数</h2> <p>传统定义函数的方式</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const aaa = function (param) {
+      
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>ES6中的箭头函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//const ccc = (参数列表) =&gt; {}
+  const ccc = () =&gt; {}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_4-1-箭头函数的参数和返回值"><a href="#_4-1-箭头函数的参数和返回值" class="header-anchor">#</a> 4.1 箭头函数的参数和返回值</h3> <h4 id="_4-1-1-参数问题"><a href="#_4-1-1-参数问题" class="header-anchor">#</a> 4.1.1 参数问题</h4> <p>放入两个参数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const sum = (num1,num2) =&gt; {
+    return num1 + num2 
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>放入一个参数,()可以省略</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const power = num =&gt; {
+  return num * num
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="_4-1-2-函数内部"><a href="#_4-1-2-函数内部" class="header-anchor">#</a> 4.1.2 函数内部</h4> <p>函数中代码块中有多行代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const test = () =&gt;{
+  console.log(&quot;hello zzz&quot;)
+  console.log(&quot;hello vue&quot;)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>函数代码块中只有一行代码，可以省略return</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// const mul = (num1,num2) =&gt; {
+//   return num1 * num2
+// }
+const mul = (num1,num2) =&gt; num1* num2
+// const log = () =&gt; {
+//   console.log(&quot;log&quot;)
+// }
+const log = () =&gt; console.log(&quot;log&quot;)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_4-3-箭头函数的this使用"><a href="#_4-3-箭头函数的this使用" class="header-anchor">#</a> 4.3 箭头函数的this使用</h3> <p>什么时候使用箭头函数</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>setTimeout(function () {
+	console.log(this)
+} , 1000);
+setTimeout(() =&gt; {
+	console.log(this)//这里this找的是window的this
+}, 1000);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>结论：箭头函数没有this，这里this引用的是最近作用域（aaa函数里的this）的this。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  const obj = {
+      aaa(){
+        setTimeout(function () {
+          console.log(this)//window
+         });
+         setTimeout(() =&gt; {
+          console.log(this)//obj
+        });
+      }
+    }
+    obj.aaa()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>上述中第一个是window对象的this，第二个箭头函数的this是obj的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    const obj = {
+      aaa() {
+        setTimeout(function () {
+          setTimeout(function () {
+            console.log(this) //window
+          })
+          setTimeout(() =&gt; {
+            console.log(this) //window
+          })
+        })
+        setTimeout(() =&gt; {
+          setTimeout(function () {
+            console.log(this) //window
+          })
+          setTimeout(() =&gt; {
+            console.log(this) //obj
+          })
+        })
+      }
+    }
+    obj.aaa()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="五、高阶函数"><a href="#五、高阶函数" class="header-anchor">#</a> 五、高阶函数</h2> <h3 id="_5-1-filter过滤函数"><a href="#_5-1-filter过滤函数" class="header-anchor">#</a> 5.1 filter过滤函数</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const nums = [2,3,5,1,77,55,100,200]
+//要求获取nums中大于50的数
+//回调函数会遍历nums中每一个数，传入回调函数，在回调函数中写判断逻辑，返回true则会被数组接收，false会被拒绝
+let newNums = nums.filter(function (num) {
+  if(num &gt; 50){
+    return true;
+  }
+  return false;
+ })
+ //可以使用箭头函数简写
+//  let newNums = nums.filter(num =&gt; num &gt;50)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="_5-2-map高阶函数"><a href="#_5-2-map高阶函数" class="header-anchor">#</a> 5.2 map高阶函数</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 要求将已经过滤的新数组每项乘以2
+//map函数同样会遍历数组每一项，传入回调函数为参数，num是map遍历的每一项，回调函数function返回值会被添加到新数组中
+let newNums2 = newNums.map(function (num) {
+  return num * 2
+ })
+ //简写
+//  let newNums2 = newNums.map(num =&gt; num * 2)
+console.log(newNums2);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_5-3-reduce高阶函数"><a href="#_5-3-reduce高阶函数" class="header-anchor">#</a> 5.3 reduce高阶函数</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 3.reduce高阶函数
+//要求将newNums2的数组所有数累加
+//reduce函数同样会遍历数组每一项，传入回调函数和‘0’为参数，0表示回调函数中preValue初始值为0，回调函数中参数preValue是每一次回调函数function返回的值，currentValue是当前值
+//例如数组为[154, 110, 200, 400],则回调函数第一次返回值为0+154=154，第二次preValue为154，返回值为154+110=264，以此类推直到遍历完成
+let newNum = newNums2.reduce(function (preValue,currentValue) {
+  return preValue + currentValue
+ },0)
+//简写
+// let newNum = newNums2.reduce((preValue,currentValue) =&gt; preValue + currentValue)
+console.log(newNum);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#一、块级作用域" title="一、块级作用域">一、块级作用域</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_1-1-什么是变量作用域" title="1.1. 什么是变量作用域">1.1. 什么是变量作用域</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_1-2-没有块级作用域造成的问题" title="1.2. 没有块级作用域造成的问题">1.2. 没有块级作用域造成的问题</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#for块级" title="for块级">for块级</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#二、const的使用" title="二、const的使用">二、const的使用</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_1-const用来定义常量，赋值之后不能再赋值，再次赋值会报错。" title="1.const用来定义常量，赋值之后不能再赋值，再次赋值会报错。">1.const用来定义常量，赋值之后不能再赋值，再次赋值会报错。</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_2-const不能只声明不赋值，会报错。" title="2.const不能只声明不赋值，会报错。">2.const不能只声明不赋值，会报错。</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_3-const常量含义是你不能改变其指向的对象，例如user，都是你可以改变user属性。" title="3.const常量含义是你不能改变其指向的对象，例如user，都是你可以改变user属性。">3.const常量含义是你不能改变其指向的对象，例如user，都是你可以改变user属性。</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#三、es6的增强写法" title="三、ES6的增强写法">三、ES6的增强写法</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_3-1-es6的对象属性增强型写法" title="3.1. ES6的对象属性增强型写法">3.1. ES6的对象属性增强型写法</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_3-2-es6对象的函数增强型写法" title="3.2 ES6对象的函数增强型写法">3.2 ES6对象的函数增强型写法</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#四、箭头函数" title="四、箭头函数">四、箭头函数</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-1-箭头函数的参数和返回值" title="4.1 箭头函数的参数和返回值">4.1 箭头函数的参数和返回值</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-3-箭头函数的this使用" title="4.3 箭头函数的this使用">4.3 箭头函数的this使用</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#五、高阶函数" title="五、高阶函数">五、高阶函数</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_5-1-filter过滤函数" title="5.1 filter过滤函数">5.1 filter过滤函数</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_5-2-map高阶函数" title="5.2 map高阶函数">5.2 map高阶函数</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_5-3-reduce高阶函数" title="5.3 reduce高阶函数">5.3 reduce高阶函数</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>项目详情</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/blog-vuepress/assets/js/app.654cfb47.js" defer></script><script src="/blog-vuepress/assets/js/8.d47956ad.js" defer></script><script src="/blog-vuepress/assets/js/3.2b79a1c5.js" defer></script><script src="/blog-vuepress/assets/js/20.94e6e4b9.js" defer></script>
+  </body>
+</html>

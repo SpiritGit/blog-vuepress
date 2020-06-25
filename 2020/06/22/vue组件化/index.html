@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue组件化开发 | 王鑫之个人主页</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue组建化开发">
+    <meta name="keywords" content="Vue组件化开发">
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.654cfb47.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/8.d47956ad.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/3.2b79a1c5.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/27.da97f9e0.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.8aefdd46.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.56bc5b0b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.72e732fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.0aeb1cf8.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.43091766.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.a0b17260.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.28ad2420.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.c5fde455.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.8adff865.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.bb4af459.js"><link rel="prefetch" href="/blog-vuepress/assets/js/20.94e6e4b9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/21.cdd255b3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/22.6b8a6de1.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.322781e9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/24.35dcbda6.js"><link rel="prefetch" href="/blog-vuepress/assets/js/25.6e78f2f4.js"><link rel="prefetch" href="/blog-vuepress/assets/js/26.9944a971.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.3e15cab3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.9b93add7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.035a866e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.08b0f9f2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.d09c27f0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.5775b741.js"><link rel="prefetch" href="/blog-vuepress/assets/js/vuejs-paginate.b188c949.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog-vuepress/" class="nav-link home-link">王鑫之个人主页 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog-vuepress/" class="nav-link mobile-home-link">王鑫之个人主页 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        Vue组件化开发
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">王鑫之</span> <span itemprop="address">   in 南京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-06-22T00:00:00.000Z">
+      2020-06-22
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog-vuepress/tag/Vue" data-v-d832e844> Vue </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="一、组件的基本使用"><a href="#一、组件的基本使用" class="header-anchor">#</a> 一、组件的基本使用</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>  &lt;div id=&quot;app&quot;&gt;
+    &lt;cpn1&gt;&lt;/cpn1&gt;
+    &lt;cpn2&gt;&lt;/cpn2&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    // 1.注册全局组件语法糖
+    Vue.component('cpn1', {
+      template:`
+        &lt;div&gt;
+          &lt;h2&gt;全局组件语法糖&lt;/h2&gt;
+          &lt;p&gt;全局组件语法糖&lt;/p&gt;
+        &lt;/div&gt;`
+    })
+
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      components:{//局部组件创建
+        cpn2:{
+          template:`
+        &lt;div&gt;
+          &lt;h2&gt;局部组件语法糖&lt;/h2&gt;
+          &lt;p&gt;局部组件语法糖&lt;/p&gt;
+        &lt;/div&gt;`
+        }
+      }
+    })
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>注册组件时候可以不实例化组件对象，直接在注册的时候实例化。{}就是一个组件对象。</p> <h2 id="二、组件模版的分离写法"><a href="#二、组件模版的分离写法" class="header-anchor">#</a> 二、组件模版的分离写法</h2> <p>使用template标签，将内容写在标签内。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template id=&quot;cpn2&quot;&gt;
+   &lt;div&gt;
+     &lt;h2&gt;组件模板的分离写法&lt;/h2&gt;
+     &lt;p&gt;template标签&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/template&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>调用分离的模板，使用<code>template:'#cpn1'</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+
+    const app = new Vue({
+      el: &quot;#app&quot;,
+      components: { //局部组件创建
+        cpn1:{
+          template:'#cpn1'
+        },
+        cpn2: {
+          template: '#cpn2'
+        }
+      }
+    })
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="三、组件的数据"><a href="#三、组件的数据" class="header-anchor">#</a> 三、组件的数据</h2> <h3 id="_3-1-存放问题"><a href="#_3-1-存放问题" class="header-anchor">#</a> 3.1 存放问题</h3> <p>vue组件就是一个vue实例，相应的vue组件也有data属性来存放数据。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  &lt;div id=&quot;app&quot;&gt;
+    &lt;cpn1&gt;&lt;/cpn1&gt;
+  &lt;/div&gt;
+
+  &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+
+    const app = new Vue({
+      el: &quot;#app&quot;,
+      components: { //局部组件创建
+        cpn1:{
+          template:'&lt;div&gt;{{msg}}&lt;/div&gt;',
+          data(){
+            return {
+              msg:&quot;组件的数据存放必须要是一个函数&quot;
+            }
+          }
+        }
+      }
+    })
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="_3-2-组件的data为什么必须是函数"><a href="#_3-2-组件的data为什么必须是函数" class="header-anchor">#</a> 3.2 组件的data为什么必须是函数</h3> <p>组件的思想是复用，定义组件当然是把通用的公共的东西抽出来复用。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;h2&gt;data不使用函数&lt;/h2&gt;
+    &lt;cpn1&gt;&lt;/cpn1&gt;
+    &lt;cpn1&gt;&lt;/cpn1&gt;
+    &lt;hr&gt;
+    &lt;h2&gt;data使用函数&lt;/h2&gt;
+    &lt;cpn2&gt;&lt;/cpn2&gt;
+    &lt;cpn2&gt;&lt;/cpn2&gt;
+    &lt;hr&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;template id=&quot;cpn1&quot;&gt;
+    &lt;div&gt;
+      &lt;button @click=&quot;count--&quot;&gt;-&lt;/button&gt;
+      当前计数：{{count}}
+      &lt;button @click=&quot;count++&quot;&gt;+&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+  &lt;template id=&quot;cpn2&quot;&gt;
+    &lt;div&gt;
+      &lt;button @click=&quot;count--&quot;&gt;-&lt;/button&gt;
+      当前计数：{{count}}
+      &lt;button @click=&quot;count++&quot;&gt;+&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+  &lt;script&gt;
+    const obj = {
+      count:0
+    };
+    const app = new Vue({
+      el: &quot;#app&quot;,
+      components: { //局部组件创建
+        cpn1: {
+          template: '#cpn1',
+          data() {
+            return obj;
+          }
+        },
+        cpn2: {
+          template: '#cpn2',
+          data() {
+            return {
+              count: 0
+            }
+          }
+        }
+      }
+    })
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div><p>上述代码中定义了两个组件cpn1和cpn2，都是定义了两个计数器，con1的data虽然使用了函数，但是为了模拟<code>data:{count:0}</code>，使用了常量obj来返回count。不使用函数data的好像共用一个count属性，而使用函数的data的count是各自用各自的，像局部变量一样有块级作用域，这个块级就是vue组件的作用域。</p> <h2 id="四、组件间通信"><a href="#四、组件间通信" class="header-anchor">#</a> 四、组件间通信</h2> <h3 id="_4-1-使用props属性，父组件向子组件传递数据"><a href="#_4-1-使用props属性，父组件向子组件传递数据" class="header-anchor">#</a> 4.1 使用props属性，父组件向子组件传递数据</h3> <p>v-bind是不支持使用驼峰标识的，例如cUser要改成c-User。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div id=&quot;app&quot;&gt;
+   &lt;!-- v-bind不支持驼峰 :cUser改成 :c-User--&gt;
+   &lt;!-- &lt;cpn :cUser=&quot;user&quot;&gt;&lt;/cpn&gt; --&gt;
+   &lt;cpn :c-User=&quot;user&quot;&gt;&lt;/cpn&gt;
+   &lt;cpn :cuser=&quot;user&quot; &gt;&lt;/cpn&gt;
+ &lt;/div&gt;
+ &lt;template id=&quot;cpn&quot;&gt;
+   &lt;div&gt;
+     &lt;!-- 使用驼峰 --&gt;
+     &lt;h2&gt;{{cUser}}&lt;/h2&gt;
+     &lt;!-- 不使用 --&gt;
+     &lt;h2&gt;{{cuser}}&lt;/h2&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+ &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+ &lt;script&gt;
+   // 父传子：props
+   const cpn = {
+     template: &quot;#cpn&quot;,
+     props: { //对象写法
+       //驼峰
+       cUser:Object,
+       //未使用驼峰
+       cuser:Object
+     },
+     data() {return {}},
+     methods: {},
+   };
+   const app = new Vue({
+     el: &quot;#app&quot;,
+     data: {
+       user:{
+         name:'zzz',
+         age:18,
+         height:175
+       }
+     },
+     components: {
+       cpn
+     }
+   })
+ &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><h3 id="_4-2-使用-emit，子组件向父组件传递数据"><a href="#_4-2-使用-emit，子组件向父组件传递数据" class="header-anchor">#</a> 4.2 使用$emit，子组件向父组件传递数据</h3> <p>子组件向父组件传值，使用自定义事件<code>$emit</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 父组件 --&gt;
+ &lt;div id=&quot;app&quot;&gt;
+   &lt;!-- 不写参数默认传递btnClick的item --&gt;
+   &lt;cpn @itemclick=&quot;cpnClcik&quot;&gt;&lt;/cpn&gt;
+
+ &lt;/div&gt;
+
+ &lt;!-- 子组件 --&gt;
+ &lt;template id=&quot;cpn&quot;&gt;
+
+   &lt;div&gt;
+     &lt;button v-for=&quot;(item, index) in categoties&quot; :key=&quot;index&quot; @click=&quot;btnClick(item)&quot;&gt;{{item.name}}&lt;/button&gt;
+   &lt;/div&gt;
+ &lt;/template&gt;
+
+ &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+
+ &lt;script&gt;
+   const cpn = {
+     template: &quot;#cpn&quot;,
+     data() {
+       return {
+         categoties: [{
+             id: 'aaa',
+             name: '热门推荐'
+           },
+           {
+             id: 'bbb',
+             name: '手机数码'
+           },
+           {
+             id: 'ccc',
+             name: '家用家电'
+           },
+           {
+             id: 'ddd',
+             name: '电脑办公'
+           },
+         ]
+       }
+     },
+     methods: {
+       btnClick(item) {
+         this.$emit('itemclick', item)
+       }
+     },
+   };
+   const app = new Vue({
+     el: &quot;#app&quot;,
+     data() {
+       return {
+
+       }
+     },
+     methods: {
+       cpnClcik(item) {
+         console.log('cpnClick'+item.name);
+       }
+     },
+     components: {
+       cpn
+     },
+   })
+ &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br></div></div><h3 id="_4-3-父访问子（children-ref）"><a href="#_4-3-父访问子（children-ref）" class="header-anchor">#</a> 4.3 父访问子（children-ref）</h3> <p>父组件访问子组件，有时候需要直接操作子组件的方法，或是属性，此时需要用到<code>$children</code>和<code>$ref</code>。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!-- 父组件 --&gt;
+ &lt;div id=&quot;app&quot;&gt;
+   &lt;cpn&gt;&lt;/cpn&gt;
+   &lt;cpn&gt;&lt;/cpn&gt;
+   &lt;cpn ref=&quot;aaa&quot;&gt;&lt;/cpn&gt;
+   &lt;button @click=&quot;btnClick&quot; &gt;按钮&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;!-- 子组件 --&gt;
+ &lt;template id=&quot;cpn&quot;&gt;
+   &lt;div&gt;
+     我是子组件
+   &lt;/div&gt;
+ &lt;/template&gt;
+ &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+ &lt;script&gt;
+   // 父传子：props
+   const cpn = {
+     template: &quot;#cpn&quot;,
+     data() {
+       return {
+         name:&quot;我是子组件的name&quot;
+       }
+     },
+     methods: {
+       showMessage(){
+         console.log(&quot;showMessage&quot;);
+       }
+     },
+   };
+   const app = new Vue({
+     el: &quot;#app&quot;,
+     data() {
+       return {
+         message:&quot;hello&quot;
+       }
+     },
+     methods: {
+       btnClick(){
+         // 1.children
+         // console.log(this.$children[0].showMessage)
+         // for (let cpn of this.$children) {
+         //   console.log(cpn.showMessage)
+         // }
+         // 2.$ref
+         console.log(this.$refs.aaa.name)
+       }
+     },
+     components: {
+       cpn
+     },
+   })
+ &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><p>使用<code>this.$children</code>直接获取当前实例的直接子组件，需要注意 <code>$children</code> 并不保证顺序，也不是响应式的。如果你发现自己正在尝试使用 <code>$children</code> 来进行数据绑定，考虑使用一个数组配合 <code>v-for</code> 来生成子组件，并且使用 Array 作为真正的来源。</p></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#一、组件的基本使用" title="一、组件的基本使用">一、组件的基本使用</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#二、组件模版的分离写法" title="二、组件模版的分离写法">二、组件模版的分离写法</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#三、组件的数据" title="三、组件的数据">三、组件的数据</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_3-1-存放问题" title="3.1 存放问题">3.1 存放问题</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_3-2-组件的data为什么必须是函数" title="3.2 组件的data为什么必须是函数">3.2 组件的data为什么必须是函数</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#四、组件间通信" title="四、组件间通信">四、组件间通信</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-1-使用props属性，父组件向子组件传递数据" title="4.1 使用props属性，父组件向子组件传递数据">4.1 使用props属性，父组件向子组件传递数据</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-2-使用-emit，子组件向父组件传递数据" title="4.2 使用$emit，子组件向父组件传递数据">4.2 使用$emit，子组件向父组件传递数据</a></div><div class="vuepress-toc-item vuepress-toc-h3"><a href="#_4-3-父访问子（children-ref）" title="4.3 父访问子（children-ref）">4.3 父访问子（children-ref）</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>项目详情</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/blog-vuepress/assets/js/app.654cfb47.js" defer></script><script src="/blog-vuepress/assets/js/8.d47956ad.js" defer></script><script src="/blog-vuepress/assets/js/3.2b79a1c5.js" defer></script><script src="/blog-vuepress/assets/js/27.da97f9e0.js" defer></script>
+  </body>
+</html>

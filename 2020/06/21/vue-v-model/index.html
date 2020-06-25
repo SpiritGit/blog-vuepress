@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue_v-model | 王鑫之个人主页</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Vue_v-model">
+    <meta name="keywords" content="v-model">
+    <link rel="preload" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css" as="style"><link rel="preload" href="/blog-vuepress/assets/js/app.654cfb47.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/8.d47956ad.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/3.2b79a1c5.js" as="script"><link rel="preload" href="/blog-vuepress/assets/js/25.6e78f2f4.js" as="script"><link rel="prefetch" href="/blog-vuepress/assets/js/10.8aefdd46.js"><link rel="prefetch" href="/blog-vuepress/assets/js/11.56bc5b0b.js"><link rel="prefetch" href="/blog-vuepress/assets/js/12.72e732fe.js"><link rel="prefetch" href="/blog-vuepress/assets/js/13.0aeb1cf8.js"><link rel="prefetch" href="/blog-vuepress/assets/js/14.43091766.js"><link rel="prefetch" href="/blog-vuepress/assets/js/15.a0b17260.js"><link rel="prefetch" href="/blog-vuepress/assets/js/16.28ad2420.js"><link rel="prefetch" href="/blog-vuepress/assets/js/17.c5fde455.js"><link rel="prefetch" href="/blog-vuepress/assets/js/18.8adff865.js"><link rel="prefetch" href="/blog-vuepress/assets/js/19.bb4af459.js"><link rel="prefetch" href="/blog-vuepress/assets/js/20.94e6e4b9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/21.cdd255b3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/22.6b8a6de1.js"><link rel="prefetch" href="/blog-vuepress/assets/js/23.322781e9.js"><link rel="prefetch" href="/blog-vuepress/assets/js/24.35dcbda6.js"><link rel="prefetch" href="/blog-vuepress/assets/js/26.9944a971.js"><link rel="prefetch" href="/blog-vuepress/assets/js/27.da97f9e0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/28.3e15cab3.js"><link rel="prefetch" href="/blog-vuepress/assets/js/4.9b93add7.js"><link rel="prefetch" href="/blog-vuepress/assets/js/5.035a866e.js"><link rel="prefetch" href="/blog-vuepress/assets/js/6.08b0f9f2.js"><link rel="prefetch" href="/blog-vuepress/assets/js/7.d09c27f0.js"><link rel="prefetch" href="/blog-vuepress/assets/js/9.5775b741.js"><link rel="prefetch" href="/blog-vuepress/assets/js/vuejs-paginate.b188c949.js">
+    <link rel="stylesheet" href="/blog-vuepress/assets/css/0.styles.c2cdd82b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/blog-vuepress/" class="nav-link home-link">王鑫之个人主页 </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/blog-vuepress/" class="nav-link mobile-home-link">王鑫之个人主页 </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/blog-vuepress/posts/" class="nav-link">博客</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/tag/" class="nav-link">Tags</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/resume/" class="nav-link">简历</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/concat/" class="nav-link">联系我</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/project/" class="nav-link">项目</a></li><li class="mobile-nav-item"><a href="/blog-vuepress/her/" class="nav-link">她</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        Vue_v-model
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">王鑫之</span> <span itemprop="address">   in 南京</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-06-21T00:00:00.000Z">
+      2020-06-21
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/blog-vuepress/tag/Vue" data-v-d832e844> Vue </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="一、v-model的基本使用"><a href="#一、v-model的基本使用" class="header-anchor">#</a> 一、v-model的基本使用</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+  &lt;input type=&quot;text&quot; v-model=&quot;message&quot;&gt;{{message}}
+&lt;/div&gt;
+&lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: &quot;hello&quot;
+    }
+  })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>​v-model双向绑定，既输入框的value改变，对应的message对象值也会改变，修改message的值，input的value也会随之改变。无论改变那个值，另外一个值都会变化。</p> <h2 id="二、v-model的原理"><a href="#二、v-model的原理" class="header-anchor">#</a> 二、v-model的原理</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+  &lt;!-- $event获取事件对象，$event.target.value获取input值 --&gt;
+&lt;!--  &lt;input type=&quot;text&quot; :value=&quot;message&quot; @input=&quot;changeValue($event.target.value)&quot;&gt;{{message}}--&gt;
+  &lt;!--事件调用方法传参了，写函数时候省略了小括号，但是函数本身是需要传递一个参数的，这个参数就是原生事件event参数传递进去--&gt;
+  &lt;input type=&quot;text&quot; :value=&quot;message&quot; @input=&quot;changeValue&quot;&gt;{{message}}
+&lt;/div&gt;
+&lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: &quot;hello world&quot;
+    },
+    methods: {
+      changeValue(event){
+        console.log(&quot;值改变了&quot;);
+        this.message = event.target.value
+      }
+    }
+  })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>​<code>v-model = v-bind + v-on</code>，实现双向绑定需要是用v-bind和v-on，使用v-bind给input的value绑定message对象，此时message对象改变，input的值也会改变。但是改变input的value并不会改变message的值，此时需要一个v-on绑定一个方法，监听事件，当input的值改变的时候，将最新的值赋值给message对象。<code>$event</code>获取事件对象，target获取监听的对象dom，value获取最新的值。</p> <h2 id="三、-v-model结合radio类型使用"><a href="#三、-v-model结合radio类型使用" class="header-anchor">#</a> 三、 v-model结合radio类型使用</h2> <p>​ radio单选框的name属性是互斥的，如果使用v-model，可以不使用name就可以互斥。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  &lt;div id=&quot;app&quot;&gt;
+    &lt;!-- name属性radio互斥 使用v-model可以不用name就可以互斥 --&gt;
+    &lt;label for=&quot;male&quot;&gt;
+      &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;sex&quot; value=&quot;男&quot; v-model=&quot;sex&quot;&gt;男
+    &lt;/label&gt;
+    &lt;label for=&quot;female&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;sex&quot; value=&quot;女&quot; v-model=&quot;sex&quot;&gt;女
+    &lt;/label&gt;
+    &lt;div&gt;你选择的性别是：{{sex}}&lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        message:&quot;zzz&quot;,
+        sex:&quot;男&quot;
+      },
+
+    })
+  &lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>v-model绑定<code>sex</code>属性，初始值为“男”，选择女后<code>sex</code>属性变成“女”，因为此时是双向绑定。</p> <h2 id="四、v-model结合checkbox类型使用"><a href="#四、v-model结合checkbox类型使用" class="header-anchor">#</a> 四、v-model结合checkbox类型使用</h2> <p>checkbox可以结合v-model做单选框，也可以多选框。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;app&quot;&gt;
+  &lt;!--单选框--&gt;
+  &lt;h2&gt;单选框&lt;/h2&gt;
+  &lt;label for=&quot;agree&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;agree&quot; v-model=&quot;isAgree&quot;&gt;同意协议
+  &lt;/label&gt;
+  &lt;!--多选框--&gt;
+  &lt;h2&gt;多选框&lt;/h2&gt;
+  &lt;label :for=&quot;item&quot; v-for=&quot;(item,index) in hobbies&quot; :key=&quot;index&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; :value=&quot;item&quot; :id=&quot;item&quot; v-model=&quot;hobbies&quot;&gt;{{item}}
+  &lt;/label&gt;
+  &lt;h2&gt;你的爱好是：{{hobbies}}&lt;/h2&gt;
+&lt;/div&gt;
+&lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  const app = new Vue({
+    el: '#app',
+    data: {
+      isAgree: false,
+      hobbies: [&quot;篮球&quot;,&quot;足球&quot;,&quot;乒乓球&quot;,&quot;羽毛球&quot;]
+    }
+  })
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>checkbox结合v-model实现单选框，定义变量isAgree初始化为false，点击checkbox的值为true，isAgree也是true。</p> <p>checkbox结合v-model实现多选框，定义数组对象hobbies，用于存放爱好，将hobbies与checkbox对象双向绑定，此时选中，一个多选框，就多一个true，hobbies就添加一个对象。</p> <h2 id="五、v-model结合select"><a href="#五、v-model结合select" class="header-anchor">#</a> 五、v-model结合select</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;v-model结合select类型&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;!-- select单选 --&gt;
+    &lt;select name=&quot;fruit&quot; v-model=&quot;fruit&quot;&gt;
+      &lt;option value=&quot;苹果&quot;&gt;苹果&lt;/option&gt;
+      &lt;option value=&quot;香蕉&quot;&gt;香蕉&lt;/option&gt;
+      &lt;option value=&quot;西瓜&quot;&gt;西瓜&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;h2&gt;你选择的水果是：{{fruit}}&lt;/h2&gt;
+
+    &lt;!-- select多选 --&gt;
+    &lt;select name=&quot;fruits&quot; v-model=&quot;fruits&quot; multiple&gt;
+      &lt;option value=&quot;苹果&quot;&gt;苹果&lt;/option&gt;
+      &lt;option value=&quot;香蕉&quot;&gt;香蕉&lt;/option&gt;
+      &lt;option value=&quot;西瓜&quot;&gt;西瓜&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;h2&gt;你选择的水果是：{{fruits}}&lt;/h2&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        fruit:&quot;苹果&quot;,
+        fruits:[]
+      },
+
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><p>v-model结合select可以单选也可以多选。</p> <h2 id="六、v-model的修饰符的使用"><a href="#六、v-model的修饰符的使用" class="header-anchor">#</a> 六、v-model的修饰符的使用</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;v-model修饰符&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;h2&gt;v-model修饰符&lt;/h2&gt;
+    &lt;h3&gt;lazy,默认情况是实时更新数据，加上lazy，从输入框失去焦点，按下enter都会更新数据&lt;/h3&gt;
+    &lt;input type=&quot;text&quot; v-model.lazy=&quot;message&quot;&gt;
+    &lt;div&gt;{{message}}&lt;/div&gt;
+    &lt;h3&gt;修饰符number,默认是string类型，使用number赋值为number类型&lt;/h3&gt;
+    &lt;input type=&quot;number&quot; v-model.number=&quot;age&quot;&gt;
+    &lt;div&gt;{{age}}--{{typeof age}}&lt;/div&gt;
+    &lt;h3&gt;修饰符trim:去空格&lt;/h3&gt;
+    &lt;input type=&quot;text&quot; v-model.trim=&quot;name&quot;&gt;
+
+  &lt;/div&gt;
+  &lt;script src=&quot;../js/vue.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const app = new Vue({
+      el:&quot;#app&quot;,
+      data:{
+        message:&quot;zzz&quot;,
+        age:18,
+        name:&quot;ttt&quot;
+      },
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><p><code>lazy</code>：默认情况下是实时更新数据，加上lazy，从输入框失去焦点，按下enter都会更新数据。</p> <p><code>number</code>：默认是string类型，使用number复制为number类型。</p> <p><code>trim</code>：用于自动过滤用户输入的首尾空白字符.</p></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#一、v-model的基本使用" title="一、v-model的基本使用">一、v-model的基本使用</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#二、v-model的原理" title="二、v-model的原理">二、v-model的原理</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#三、-v-model结合radio类型使用" title="三、 v-model结合radio类型使用">三、 v-model结合radio类型使用</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#四、v-model结合checkbox类型使用" title="四、v-model结合checkbox类型使用">四、v-model结合checkbox类型使用</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#五、v-model结合select" title="五、v-model结合select">五、v-model结合select</a></div><div class="vuepress-toc-item vuepress-toc-h2"><a href="#六、v-model的修饰符的使用" title="六、v-model的修饰符的使用">六、v-model的修饰符的使用</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940><li class="contact-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github" data-v-fdbf4940><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" data-v-fdbf4940></path></svg>
+          
+        </a></li></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940><li class="copyright-item" data-v-fdbf4940><a href="https://github.com/SpiritGit/blog-vuepress" target="_blank" rel="noopener noreferrer" class="nav-link external" data-v-fdbf4940>项目详情</a></li></ul></div></footer></div><div class="global-ui"></div></div>
+    <script src="/blog-vuepress/assets/js/app.654cfb47.js" defer></script><script src="/blog-vuepress/assets/js/8.d47956ad.js" defer></script><script src="/blog-vuepress/assets/js/3.2b79a1c5.js" defer></script><script src="/blog-vuepress/assets/js/25.6e78f2f4.js" defer></script>
+  </body>
+</html>
